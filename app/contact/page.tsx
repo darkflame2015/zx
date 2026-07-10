@@ -210,11 +210,11 @@ export default function ContactPage() {
                 <VaporizeTextCycle
                   texts={["Message", "Sent", "Successfully"]}
                   font={{
-                      fontFamily: "var(--font-display)",
+                      fontFamily: "'Cinzel', serif",
                       fontSize: "40px",
                       fontWeight: 600
                   }}
-                  color="#c9a84c"
+                  color="rgb(201, 168, 76)"
                   spread={5}
                   density={5}
                   animation={{
