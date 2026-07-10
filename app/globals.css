@@ -6,16 +6,16 @@
   --bg-card: #161616;
   --bg-card-hover: #1a1a1a;
   --bg-overlay: rgba(0, 0, 0, 0.7);
-  --fg-primary: #e8e0d4;
-  --fg-secondary: #a89f91;
-  --fg-dim: #6b6459;
-  --accent: #c9a84c;
-  --accent-dim: #a88a3a;
-  --accent-glow: rgba(201, 168, 76, 0.3);
-  --accent-red: #8b2d2d;
-  --accent-red-glow: rgba(139, 45, 45, 0.3);
-  --border: #2a2520;
-  --border-hover: #3d3630;
+  --fg-primary: #f0f2f5;
+  --fg-secondary: #9ba4b5;
+  --fg-dim: #606875;
+  --accent: #e0e6ed;
+  --accent-dim: #9ba4b5;
+  --accent-glow: rgba(224, 230, 237, 0.3);
+  --accent-red: #3a404d;
+  --accent-red-glow: rgba(58, 64, 77, 0.3);
+  --border: #2c313a;
+  --border-hover: #3e4451;
   --radius: 4px;
   --radius-lg: 8px;
   --font-display: 'Cinzel', serif;
@@ -121,14 +121,35 @@ input, textarea, select {
 }
 
 .btn-primary {
+  position: relative;
+  overflow: hidden;
   background: linear-gradient(135deg, var(--accent), var(--accent-dim));
   color: #0a0a0a;
   box-shadow: var(--shadow-glow);
+  z-index: 1;
+}
+
+.btn-primary::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.6) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transform: skewX(-20deg);
+  animation: shiny-sweep 4s infinite;
+  z-index: -1;
 }
 
 .btn-primary:hover {
-  background: linear-gradient(135deg, #d4b35a, var(--accent));
-  box-shadow: 0 0 40px var(--accent-glow), 0 0 80px rgba(201, 168, 76, 0.15);
+  background: linear-gradient(135deg, #ffffff, var(--accent));
+  box-shadow: 0 0 30px var(--accent-glow), 0 0 60px rgba(224, 230, 237, 0.2);
   transform: translateY(-2px);
 }
 
@@ -215,9 +236,15 @@ input, textarea, select {
   to { opacity: 1; transform: translateY(0); }
 }
 
+@keyframes shiny-sweep {
+  0% { left: -100%; }
+  20% { left: 200%; }
+  100% { left: 200%; }
+}
+
 @keyframes pulse-glow {
   0%, 100% { box-shadow: 0 0 20px var(--accent-glow); }
-  50% { box-shadow: 0 0 40px var(--accent-glow), 0 0 80px rgba(201, 168, 76, 0.1); }
+  50% { box-shadow: 0 0 40px var(--accent-glow), 0 0 80px rgba(224, 230, 237, 0.1); }
 }
 
 @keyframes shimmer {

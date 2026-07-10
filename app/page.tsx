@@ -41,7 +41,7 @@ export default function HomePage() {
 
         <div className={styles.heroShadow}>
           <ShadowOverlay
-            color="rgba(201, 168, 76, 0.15)"
+            color="rgba(224, 230, 237, 0.15)"
             animation={{ scale: 40, speed: 20 }}
             noise={{ opacity: 0.3, scale: 1 }}
             style={{ position: 'absolute', inset: 0 }}

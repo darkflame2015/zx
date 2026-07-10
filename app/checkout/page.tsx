@@ -106,7 +106,7 @@ export default function CheckoutPage() {
           contact: formData.phone,
         },
         theme: {
-          color: '#c9a84c',
+          color: '#e0e6ed',
         },
         modal: {
           ondismiss: function () {
@@ -150,7 +150,7 @@ export default function CheckoutPage() {
       <section className={styles.successSection}>
         <div className={styles.successShadow}>
           <ShadowOverlay
-            color="rgba(201, 168, 76, 0.15)"
+            color="rgba(224, 230, 237, 0.15)"
             animation={{ scale: 35, speed: 20 }}
             noise={{ opacity: 0.2, scale: 1 }}
             style={{ position: 'absolute', inset: 0 }}

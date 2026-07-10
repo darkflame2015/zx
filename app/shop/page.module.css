@@ -47,7 +47,7 @@
 .filterBtn.filterActive {
   border-color: var(--accent);
   color: var(--accent);
-  background: rgba(201, 168, 76, 0.05);
+  background: rgba(224, 230, 237, 0.05);
 }
 
 .grid {

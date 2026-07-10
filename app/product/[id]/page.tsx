@@ -43,7 +43,7 @@ export default function ProductPage() {
             >
               <div className={styles.shadowWrap}>
                 <ShadowOverlay
-                  color="rgba(201, 168, 76, 0.1)"
+                  color="rgba(224, 230, 237, 0.1)"
                   animation={{ scale: 25, speed: 15 }}
                   noise={{ opacity: 0.15, scale: 0.8 }}
                   style={{ position: 'absolute', inset: 0, zIndex: 1 }}

@@ -118,7 +118,7 @@ export default function AboutPage() {
       {/* CTA Banner */}
       <section className={styles.ctaBanner}>
         <ShadowOverlay
-          color="rgba(201, 168, 76, 0.12)"
+          color="rgba(224, 230, 237, 0.12)"
           animation={{ scale: 30, speed: 20 }}
           noise={{ opacity: 0.2, scale: 0.8 }}
           style={{ position: 'absolute', inset: 0 }}

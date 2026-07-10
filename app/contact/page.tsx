@@ -107,7 +107,7 @@ export default function ContactPage() {
       <section className={styles.hero}>
         <div className={styles.heroShadow}>
           <ShadowOverlay
-            color="rgba(201, 168, 76, 0.12)"
+            color="rgba(224, 230, 237, 0.12)"
             animation={{ scale: 30, speed: 18 }}
             noise={{ opacity: 0.2, scale: 1 }}
             style={{ position: 'absolute', inset: 0 }}
@@ -214,7 +214,7 @@ export default function ContactPage() {
                       fontSize: "40px",
                       fontWeight: 600
                   }}
-                  color="rgb(201, 168, 76)"
+                  color="rgb(224, 230, 237)"
                   spread={5}
                   density={5}
                   animation={{
