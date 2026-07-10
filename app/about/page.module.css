@@ -1,0 +1,105 @@
+.hero {
+  position: relative;
+  padding: 80px 0 40px;
+  overflow: hidden;
+  background: var(--bg-secondary);
+  border-bottom: 1px solid var(--border);
+}
+
+.heroShadow {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.heroContent {
+  position: relative;
+  z-index: 10;
+  text-align: center;
+}
+
+.title {
+  font-family: var(--font-decorative);
+  font-size: clamp(2rem, 4vw, 3rem);
+  margin-top: 12px;
+}
+
+.subtitle {
+  color: var(--fg-secondary);
+  font-size: 0.95rem;
+  margin-top: 8px;
+}
+
+.revealText {
+  font-family: var(--font-display);
+  font-size: clamp(1.2rem, 2.5vw, 1.8rem);
+  font-weight: 500;
+  line-height: 1.8;
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.sectionTitle {
+  font-family: var(--font-decorative);
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  margin-top: 12px;
+}
+
+.valuesSection {
+  padding: 80px 0;
+  background: var(--bg-secondary);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.valuesGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.valueCard {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  padding: 32px;
+  text-align: center;
+  transition: all 0.3s;
+}
+
+.valueCard:hover {
+  border-color: var(--border-hover);
+  transform: translateY(-2px);
+}
+
+.valueIcon {
+  color: var(--accent);
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: center;
+}
+
+.valueTitle {
+  font-size: 1rem;
+  margin-bottom: 12px;
+}
+
+.valueDesc {
+  color: var(--fg-secondary);
+  font-size: 0.85rem;
+  line-height: 1.7;
+}
+
+.ctaBanner {
+  position: relative;
+  padding: 100px 0;
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .valuesGrid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}
